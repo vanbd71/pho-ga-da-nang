@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phở Gà Ta Chính Gốc Hà Nội - Đà Nẵng</title>
+    <meta name="description" content="Nước dùng thanh ngọt Thủ đô giữa biển xanh miền Trung. Thưởng thức phở gà ta chính gốc Hà Nội tại Đà Nẵng.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-bowl-food"></i> Phở Gà An
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero">Trang chủ</a></li>
+                    <li><a href="#menu">Thực đơn</a></li>
+                    <li><a href="#order" class="btn btn-outline">Đặt Bàn / Đặt Món</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="assets/hero_pho_beach.png" alt="Tô phở gà thơm ngon trên nền biển Đà Nẵng, nước dùng trong vắt" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-text">
+            <h1 class="animate-fade-up">Phở Gà Ta Chính Gốc Hà Nội<br><span>Đến Với Đà Nẵng</span></h1>
+            <p class="slogan animate-fade-up delay-1">Nước dùng thanh ngọt Thủ đô giữa biển xanh miền Trung.</p>
+            <div class="hero-buttons animate-fade-up delay-2">
+                <a href="#menu" class="btn btn-primary">Xem Thực Đơn</a>
+                <a href="#order" class="btn btn-secondary">Đặt Bàn Ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Tinh Hoa Đặc Sản</h2>
+                <div class="divider"></div>
+                <p>Thưởng thức hương vị truyền thống Hà Thành với những nguyên liệu tươi ngon nhất, kết hợp rau thơm tươi mát miền Trung.</p>
+            </div>
+
+            <div class="menu-grid" id="menu-container">
+                <!-- Menu Items sẽ được inject qua JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Booking Section -->
+    <section id="order" class="order section bg-light-blue">
+        <div class="container">
+            <div class="order-wrapper">
+                <div class="order-content">
+                    <h2>Đặt Bàn Hoặc Đặt Mang Về</h2>
+                    <p>Chuẩn bị chu đáo từng bát phở - Vui lòng để lại thông tin đặt trước để chúng tôi phục vụ tốt nhất.</p>
+                    <ul class="order-features">
+                        <li><i class="fa-solid fa-check text-red"></i> Phục vụ nhanh chóng, nhiệt tình.</li>
+                        <li><i class="fa-solid fa-check text-red"></i> Đảm bảo món nóng hổi tinh tươm.</li>
+                        <li><i class="fa-solid fa-check text-red"></i> Hỗ trợ đặt làm tiệc nhỏ hoặc công ty.</li>
+                    </ul>
+                </div>
+                <div class="order-form-container">
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="0901234567" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="time">Giờ đến *</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="item">Món yêu thích nhất</label>
+                                <select id="item" name="item">
+                                    <option value="">-- Chọn món --</option>
+                                    <option value="Phở gà ta truyền thống">Phở gà ta truyền thống</option>
+                                    <option value="Phở gà xé phay">Phở gà xé phay</option>
+                                    <option value="Bún thang">Bún thang</option>
+                                    <option value="Cháo gà">Cháo gà</option>
+                                    <option value="Khác">Món khác (Ghi chú)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Ghi chú thêm</label>
+                            <textarea id="note" name="note" rows="3" placeholder="Ví dụ: Nhiều hành lá, không lấy ngò gai..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Gửi Yêu Cầu <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    <div id="form-success" class="form-success hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>Đơn đã gửi thành công!</h3>
+                        <p>Chúng tôi sẽ gọi lại cho bạn sớm nhất có thể để xác nhận.</p>
+                        <button class="btn btn-outline" onclick="resetForm()">Đặt Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-bowl-food"></i> Phở Gà An
+                </a>
+                <p>Giữ trọn hương vị xưa, kết hợp không gian biển xanh. Một trải nghiệm ẩm thực độc đáo.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liên hệ</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 78 Nguyễn Văn Linh, Đà Nẵng</li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:0901234567">090 123 4567</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:contact@phoga.danang.vn">contact@phoga.danang.vn</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Giờ Mở Cửa</h4>
+                <ul class="opening-hours">
+                    <li><span>Thứ 2 - Thứ 6:</span> 06:00 - 13:00, 16:30 - 21:00</li>
+                    <li><span>Thứ 7 - CN:</span> 06:00 - 22:00</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="javascript:void(0)" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="javascript:void(0)" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="javascript:void(0)" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Phở Gà An. Tất cả các quyền được bảo lưu.</p>
+                <p class="credit">Thiết kế bởi Minh Đỗ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
